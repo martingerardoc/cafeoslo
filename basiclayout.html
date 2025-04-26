@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/basiclayout.css">
+    <title>BasicLayout</title>
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="./imagenes/Logo.png" alt="">
+            </div>
+            <ul class="links">
+                <li><a href="#Hero">EL ESPACIO</a></li>
+                <li><a href="#about">PRODUCTOS</a></li>
+                <li><a href="#Services">OFERTAS</a></li>
+                <li><a href="#Contact">RESERVAS</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    
+        <!-- DROPDOWN debería estar DENTRO de NAVBAR o relacionado con ella -->
+        <div class="dropdown_menu">
+            <li><a href="#elEspacio">EL ESPACIO</a></li>
+            <li><a href="#productos">PRODUCTOS</a></li>
+            <li><a href="#ofertas">OFERTAS</a></li>
+            <li><a href="#reservas">RESERVAS</a></li>
+            <li><a href="#" class="action_btn">CONTACTO</a></li>
+        </div>
+    
+        <!-- Ahora tu CONTENIDO principal del HEADER -->
+        <div class="header_content">
+            <h2>RECIÉN HECHO TODOS LOS DÍAS</h2>
+            <p>
+                Chocolate cake chocolate cake pie candy canes chocolate cake bonbon I love marzipan liquor I love cake chuppa cups. Pie danish macaroon ice cream. Bonbon sweet bonbon jelly beans jelly-o I love lollipop.
+            </p>
+        </div>
+    </header>
+    <main>
+        <section class="rojo">
+            <h2>VEN AL BRUNCH DE LOS DOMINGOS</h2>
+        <p>
+            Sesame snaps icing chocolate bar. I love donut powder sesame snaps. Jelly-o topping caramels. Sugar plum I love gummi bears.
+        </p>
+        </section>
+        <section class="beige">
+            <H2>CELEBRA TUS FIESTAS CON NOSOTROS</H2>
+            <p>
+                Bombon sweet bonbon jelly beans jelly-o I love lollipop. Cookie sesame snaps bear claw. Cake dragée danish. Powder I love liquore macarron.
+            </p>
+        </section>   
+    </main>
+    <main>
+        <section class="primero">
+            <H2>VEN A DESAYUNAR</H2>
+            <p>
+                Bonbon topping I love sweet roll I love candy icing chocolate jelly. Pie soufflé sweet. Apple pie bonbon caramels powder.
+            </p>
+            <button> DESCUBRE NUESTROS PRODUCTOS</button>
+        </section>
+    </main>
+    <main>
+        <section>
+            <h2>PAN RECIEN HECHO</h2>
+        <p>
+            Cupcake danish I love halvah bonbon icing donut. Sweet caramels gingerbread bear claw jujubes chocolate cake pudding sesame snaps bonnon. chocolate cake wafer pudding muffin wafer sweet roll I love chupa chups. Apple pie jujubes ice cream sugar plum topping.
+        </p>
+        </section>
+        <section>
+            <H2>TARTAS PARA CADA DIA</H2>
+            <p>
+                And may God grant, in his great fulness, that men might be brought unto repentance and good works, that they might be restored unto grace for grace, according to their works.
+            </p>
+        </section>   
+        <section>
+            <h2>PRUEBA NUESTROS DULCES</h2>
+        <p>
+            But behold, I say unto you that ye must pray always, and not faint, that ye must not perform any thing unto the lord save in the first place ye shall pray unto the Father in the name of Christ, that he will consecrate thy performance unto thee, that thy performance may be for the welfare of thy sould.
+        </p>
+        </section>
+        <section>
+            <H2>INGREDIENTES ECOLOGICOS</H2>
+            <p>
+                And may God grant, in his great fulness, that men might be brought unto repentance and good works, that they might be restored unto grace for grace, according to their works.
+            </p>
+        </section> 
+    </main>
+    <main>
+        <section>
+        <h2>CONTACTA CON NOSOTROS</h2>
+    <p>Si quieres hacer una reserva, tienes alguna sugerencia o simplemente quieres saludar, escribenos a:</p><br>
+    <p><strong>cafeoslo@cafeoslo.es</strong></p>
+    </section>
+    <section class="rojo">
+        <H2>¿SABES DONDE ESTAMOS?</H2>
+        <p>
+            C/ Mayor, 15 <br>
+            Barcelona
+        </p>
+    </section> 
+    </main>
+    
+   
+    <footer contenteditable="">
+        Footer
+    </footer>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>

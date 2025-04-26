@@ -27,6 +27,27 @@ body{
 .logo{
     margin: 1rem;
 }
+/**/
+header {
+    position: relative;
+}
+
+.navbar {
+    position: relative;
+    z-index: 2; /* Navbar y dropdown arriba */
+}
+
+.dropdown_menu {
+    z-index: 2; /* Dropdown arriba */
+}
+
+.header_content {
+    margin-top: 100px; /* Separar el contenido del menú */
+    text-align: center;
+    padding: 2rem;
+    z-index: 1; /* Contenido debajo */
+    position: relative;
+}
 header{
     background-image: url('../imagenes/Fondo1.jpg');
     height: 100vh;
@@ -35,6 +56,7 @@ header{
     background-position: center;
     padding: 0 2rem;
 }
+
 .navbar{
     width: 100%;
     height: 60px;
@@ -91,6 +113,7 @@ header{
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
+    transition: height 0.3s ease;
 }
 .dropdown_menu.open{
     height: 240px;
@@ -120,8 +143,100 @@ section#hero{
     font-size: 3rem;
     margin-bottom: 1rem;
 }
+
+body{
+    font-family: ´roboto´, sans-serif;
+}
+header{
+    background-image: url(../imagenes/Fondo1.jpg);
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 0 2rem;
+}
+main, footer{
+
+    border: 1px solid #bbb;
+    padding: 0.5rem;
+    background-color: aqua;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+section{
+    height: 50vh;
+    position: relative;
+    padding: 1rem;
+    background-color: #fff;
+}
+.primero{
+    background-image: url(../imagenes/Fondo2.jpg);
+    height: 50vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 0 2rem;
+    grid-column: 1/4;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+footer{
+    background: wheat;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1/4;
+}
+
+/* ESTILOS GENERALES */
+h1 {
+    font-size: 44px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Para los botones */
+button, .action_btn {
+    font-size: 14px;
+}
+@media screen and (min-width: 600px)
+{
+    header, main,section{
+        background-color: lightcoral;
+        color: black;  
+    }
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+    section{
+        background-color: aquamarine;
+    }
+    .rojo{
+        background-color: #d03b40;
+    }
+    .beige{
+        background-color: #ded6c0;
+    }
+    .header{
+        text-align: center;
+    }   
+}
 /*RESPONSIVE DESIGN*/
-@media(max-width: 992px){
+@media screen and (max-width: 992px){
     .navbar .links,
     .navbar .action_btn{
         display: none;
@@ -134,8 +249,7 @@ section#hero{
         display: block;
     }
 }
-
-@media (max-width: 576px){
+@media screen and  (max-width: 576px){
     .dropdown_menu{
         left:  2rem;
         width: unset ;
