@@ -184,9 +184,94 @@ section{
     padding: 1rem;
     background-color: #fff;
 }
+.pan{
+    background-image: url(../imagenes/Icono1.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 260px;
+    padding-left: 24px; /* Deja espacio para que el icono no tape el texto */
+    background-color: #f5f0ed;
+    padding-left: 40px; /* Aumentamos un poco el espacio para que h2 y p no queden pegados a la imagen */
+    display: flex;
+    align-items: center; /* Alinea verticalmente el icono con el texto */
+    gap: 12px; /* Espacio entre el icono y el texto */
+    color: #241d1b; /* Color del texto */
+    
+}
+.pan .texto {
+   text-align:right;
+   margin: 0; /* Elimina márgenes para mejor control */
+}
+
+.tartas{
+    background-image: url(../imagenes/Icono2.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 260px;
+    padding-left: 24px; /* Deja espacio para que el icono no tape el texto */
+    background-color: #f5f0ed;
+    padding-left: 40px; /* Aumentamos un poco el espacio para que h2 y p no queden pegados a la imagen */
+    
+}
+.dulces{
+    background-image: url(../imagenes/Icono3.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 260px;
+    padding-left: 24px; /* Deja espacio para que el icono no tape el texto */
+    background-color: #f5f0ed;
+    padding-left: 40px; /* Aumentamos un poco el espacio para que h2 y p no queden pegados a la imagen */
+    
+}
+.ingredientes{
+    background-image: url(../imagenes/Icono4.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 260px;
+    padding-left: 24px; /* Deja espacio para que el icono no tape el texto */
+    background-color: #f5f0ed;
+    padding-left: 40px; /* Aumentamos un poco el espacio para que h2 y p no queden pegados a la imagen */
+    
+}
+.beige {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Centra el texto */
+    height: 50vh; /* O asigna una altura si quieres que sea visible (ejemplo: 400px) */
+    background-color: beige; /* Opcional: le puse un color beige como sugiere el nombre */
+  }
+  
+  .beige .texto {
+    max-width: 300px; /* Opcional: para que no se estire demasiado en pantallas grandes */
+  }
+  
+  .beige h2,
+  .beige p {
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 8px 0; /* Agrega un poquito de espacio vertical entre ellos */
+  }
+  .rojo {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Centra el texto */
+    height: 50vh; /* O asigna una altura si quieres que sea visible (ejemplo: 400px) */
+    background-color: beige; /* Opcional: le puse un color beige como sugiere el nombre */
+  }
+  
+  .rojo .texto {
+    max-width: 300px; /* Opcional: para que no se estire demasiado en pantallas grandes */
+  }
+  
+  .rojo h2,
+  .rojo p {
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 8px 0; /* Agrega un poquito de espacio vertical entre ellos */
+  }
 
 footer{
-    background: wheat;
+    background: #241d1b;
     padding: 2rem;
     text-align: center;
     grid-column: 1/4;
